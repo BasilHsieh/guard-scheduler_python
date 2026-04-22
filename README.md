@@ -29,8 +29,11 @@ Manual Excel scheduling takes about one hour per month and is easy to break when
 ## Project Structure
 
 - `app.py`: Streamlit UI
-- `docs/SPEC_V1.md`: initial product + rule specification
-- `docs/SPEC_V2.md`: current functional specification (latest)
+- `docs/PRD.md`: product requirements document (business + user perspective)
+- `docs/TECH_SPEC.md`: technical specification (architecture + logic)
+- `docs/SPEC_V1.md`: legacy spec snapshot
+- `docs/SPEC_V2.md`: legacy integrated spec snapshot
+- `docs/DEVLOG.md`: development timeline and decision context
 - `shift_scheduler/`: scheduling engine and CLI
 - `examples/input.sample.json`: sample input
 - `outputs/`: generated files (ignored by git if you add `.gitignore`)
@@ -79,3 +82,4 @@ Important fields:
 - Rules `1-4` are treated as hard constraints.
 - Rules `5-6` are optimized as fairness objectives.
 - If a fully feasible schedule cannot be found, the CLI exits with an error.
+# guard-scheduler_python
