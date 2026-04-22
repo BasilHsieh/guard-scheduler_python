@@ -1,0 +1,21 @@
+{
+  "guards": [
+    { "id": "g1", "name": "王一" },
+    { "id": "g2", "name": "王二" },
+    { "id": "g3", "name": "王三" },
+    { "id": "g4", "name": "王四" },
+    { "id": "g5", "name": "王五" },
+    { "id": "g6", "name": "王六" }
+  ],
+  "holidays": [
+    "2026-05-01"
+  ],
+  "carry_over": {
+    "g1": { "consecutive_days": 0, "last_post": null, "last_holiday_dow": null, "last_holiday_post": null },
+    "g2": { "consecutive_days": 1, "last_post": "C", "last_holiday_dow": null, "last_holiday_post": null },
+    "g3": { "consecutive_days": 0, "last_post": null, "last_holiday_dow": 5, "last_holiday_post": "F" },
+    "g4": { "consecutive_days": 0, "last_post": null, "last_holiday_dow": 6, "last_holiday_post": "G" },
+    "g5": { "consecutive_days": 2, "last_post": "D", "last_holiday_dow": null, "last_holiday_post": null },
+    "g6": { "consecutive_days": 0, "last_post": null, "last_holiday_dow": null, "last_holiday_post": null }
+  }
+}

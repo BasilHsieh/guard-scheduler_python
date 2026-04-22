@@ -1,0 +1,9 @@
+[project]
+name = "guard-scheduler-sideproject"
+version = "0.1.0"
+description = "Lightweight monthly guard scheduling tool"
+requires-python = ">=3.11"
+
+[project.scripts]
+guard-scheduler = "shift_scheduler.cli:main"
+

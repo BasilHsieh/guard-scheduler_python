@@ -1,0 +1,21 @@
+{
+  "guards": [
+    { "id": "g1", "name": "王大明" },
+    { "id": "g2", "name": "李小華" },
+    { "id": "g3", "name": "張志偉" },
+    { "id": "g4", "name": "陳美玲" },
+    { "id": "g5", "name": "林建國" },
+    { "id": "g6", "name": "吳雅婷" }
+  ],
+  "holidays": [
+    "2026-06-19"
+  ],
+  "carry_over": {
+    "g1": { "consecutive_days": 0, "last_post": null, "last_holiday_dow": null, "last_holiday_post": null },
+    "g2": { "consecutive_days": 0, "last_post": null, "last_holiday_dow": null, "last_holiday_post": null },
+    "g3": { "consecutive_days": 0, "last_post": null, "last_holiday_dow": null, "last_holiday_post": null },
+    "g4": { "consecutive_days": 0, "last_post": null, "last_holiday_dow": null, "last_holiday_post": null },
+    "g5": { "consecutive_days": 0, "last_post": null, "last_holiday_dow": null, "last_holiday_post": null },
+    "g6": { "consecutive_days": 0, "last_post": null, "last_holiday_dow": null, "last_holiday_post": null }
+  }
+}
