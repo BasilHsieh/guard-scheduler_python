@@ -126,6 +126,21 @@
 - 右欄：規則健康、工時分布、哨點均衡
 - 調班區塊置於矩陣與違規資訊下方，並即時回饋本次結果
 
+### 8.4 班表矩陣互動
+
+- 班表矩陣使用 Streamlit 原生 `st.dataframe`
+- 開啟 cell selection：`on_select="rerun"` + `selection_mode="single-cell"`
+- 使用者點擊「有班」格子後：
+  - 解析成 `selected_shift_cell = {guard_id, date}`
+  - 由 `st.dialog("調班精靈")` 開啟調班流程
+- 使用者點擊「休」格或無效格時：
+  - 不進入調班
+  - 清除既有選取狀態
+- 關閉彈窗或取消選取時：
+  - 需同步清空 dataframe selection state
+  - 避免同一格在下一次 rerun 又自動開啟彈窗
+- 舊版曾用 query param (`pick`) 承接點擊事件；目前僅保留相容性恢復邏輯，不作為主要互動路徑
+
 ## 9. 匯出規格
 
 - CSV：人員 x 日期班別
@@ -160,6 +175,8 @@
 - 可行案例：調班成功且 violations=0
 - 不可行案例：回傳清楚錯誤與候選建議
 - 還班日可早於借班日（同月、未發生日期）
+- 點擊矩陣格子時，不應改變網址或出現瀏覽器導頁式刷新
+- 關閉調班彈窗後，不應因舊 selection state 再次自動開啟
 
 ## 12. 需求對照（PRD → Tech）
 
